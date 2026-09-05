@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #7C5F63;
+  font-family: 'Cinzel', serif;
+}
+
+
+.nav-left,
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-group {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* space between logo and links */
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 25px;
+  color:#e4cda7
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: #F6D7C3;
+}
+
+a:hover {
+  color: #f0eeeb;
+}
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-family: 'Cinzel', serif;
+}
+
+.login-btn {
+  background: transparent;
+  color: #e4cda7;
+  border: 2px solid #c9ae83;
+}
+
+.sign-btn {
+  background: #e4cda7;
+  color: #2d2020;
+  border: 2px solid #e4cda7;
+}
+
+.login-btn:hover {
+    background: #e4cda7;
+    color: #2d2020;
+}
+
+.sign-btn:hover {
+    background: #f0dcb9;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Image/Back1.png');
+ background-size: cover;
+ background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color:#e4cda7 ;
+  font-family: 'Cinzel', serif;
+
+}
+
+/* ---------- Our Mission ---------- */
+.mission {
+  display: flex;
+  gap: 48px;
+  padding: 48px 60px;
+  background:#554243;
+  align-items: flex-start;
+}
+
+.mission-text {
+  flex: 1.4;
+}
+
+.mission-text h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-family: 'Cinzel', serif;
+  color: #e4cda7;
+}
+
+.mission-text p {
+  font-size: 17px;
+  line-height: 1.6;
+   color: #e4cda7;
+  max-width: 65ch;
+}
+
+.mission-image {
+  flex: 1;
+  min-height: 180px;
+  background-image: url('Image/Back_main.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: stretch;
+}
+
+/* ---------- Meet The Team ---------- */
+.team {
+  background:url('Image/Back3.png');
+  padding: 56px 40px 72px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 34px;
+  color: #e4cda7;
+  font-weight: 550;
+  margin-bottom: 48px;
+  font-family: 'Cinzel', serif;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 64px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  transition: transform 0.25s ease;
+}
+
+.member:hover {
+  transform: scale(1.12);
+}
+
+.member-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  display: inline-block;
+  transition: background 0.15s ease;
+}
+
+
+.member-info {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e4cda7;
+  line-height: 1.4;
+  font-family: 'Cinzel', serif;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 60px;
+  background: #4B3031;
+  color: #eee;
+  min-height: 140px;
+  font-family: 'Cinzel', serif;
+}
+
+.footer .logo-circle {
+  background: #999;
+}
+
+.footer .logo-text {
+  color: #eee;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: #ddd;
+}
