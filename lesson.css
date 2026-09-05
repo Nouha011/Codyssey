@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #6b5860;   /* fallback / example section background */
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 240px;
+  background-image: url('Image/Back1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.map-btn {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b2e22;
+  background: #e8d5b0;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.map-btn:hover {
+  transform: translateY(-3px);
+  background: #f2e2c0;
+}
+
+.lesson-count {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f2e8d5;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #f2e8d5;
+  text-align: center;
+  line-height: 1.25;
+}
+
+/* ---------- Explanation (stretched parchment card) ---------- */
+.explanation {
+  padding: 30px 60px;
+  text-align: center;
+}
+
+.explanation-img {
+  width: 100%;
+  max-width: 700px;   /* adjust to taste */
+  height: auto;       /* keeps natural aspect ratio, no stretching */
+  display: inline-block;
+}
+
+/* ---------- Example section ---------- */
+.example {
+  position: relative;
+  background: #6b5860;
+  padding: 40px 60px 80px;
+  min-height: 380px;
+}
+
+.example-title {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #f2e8d5;
+  margin-bottom: 24px;
+}
+
+.example-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Code box (typeable) ---------- */
+.code-box {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+  background: #3a3f4a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.code-box-header {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #b7bec9;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 14px;
+}
+
+.code-input {
+  width: 100%;
+  min-height: 200px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e8ecf1;
+  padding: 16px;
+}
+
+/* ---------- Preview box ---------- */
+.preview-box {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+  background: #e8d5b0;
+  border-radius: 8px;
+}
+
+/* ---------- Start Challenge button ---------- */
+.start-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;   /* space between the boxes and the button */
+}
+
+.start-btn {
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3b2e22;
+  background: #e8d5b0;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+  background: #f2e2c0;
+}
