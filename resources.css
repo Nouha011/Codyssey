@@ -1,0 +1,360 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* =========================
+   RESOURCES
+========================= */
+
+.resources {
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url("images/resources-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 55px;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    color: #e4cda7;
+
+    text-decoration: none;
+
+    font-family: "Cinzel", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-links {
+    display: flex;
+
+    gap: 42px;
+
+    margin-left: 45px;
+}
+
+.nav-links a {
+    color: #e4cda7;
+
+    text-decoration: none;
+
+    font-family: "Cinzel", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #111;
+}
+
+
+/* =========================
+   LOGIN + REGISTER
+========================= */
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-left: auto;
+}
+
+
+/* =========================
+   LOGIN PNG
+========================= */
+
+.login-btn {
+    display: block;
+
+    width: 122px;
+    height: 38px;
+
+    position: relative;
+
+    transition: transform 0.25s ease;
+}
+
+.login-btn img {
+    display: block;
+
+    width: 145px;
+    height: auto;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   REGISTER PNG
+========================= */
+
+.register-btn {
+    display: block;
+
+    width: 122px;
+    height: 38px;
+
+    position: relative;
+
+    transition: transform 0.25s ease;
+}
+
+.register-btn img {
+    display: block;
+
+    width: 145px;
+    height: auto;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESOURCES CONTENT
+========================= */
+
+.resources-content {
+    width: 100%;
+
+    min-height: calc(100vh - 80px);
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   PARCHMENT
+========================= */
+
+.resources-paper {
+    width: 66%;
+
+    max-width: 1000px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   RESOURCES TITLE
+========================= */
+
+.resources-text {
+    position: absolute;
+
+    top: 15%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.resources-text h1 {
+    font-family: "Cinzel", serif;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #554044;
+
+    letter-spacing: 1px;
+}
+
+/* =========================
+   CUSTOM CODYSSEY CURSOR
+========================= */
+
+/* Normal cursor */
+body {
+    cursor: url("images/cursor.png") 5 5, auto;
+}
+
+
+/* Cursor when hovering over links */
+a {
+    cursor: url("images/cursor-pointer.png") 8 5, pointer;
+}
+
+
+/* Cursor when hovering over buttons */
+button {
+    cursor: url("images/cursor-pointer.png") 8 5, pointer;
+}
+
+
+/* Keep the cursor when hovering over images */
+img {
+    cursor: url("images/cursor.png") 5 5, auto;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 25px 30px;
+    }
+
+    .nav-links {
+        gap: 20px;
+
+        margin-left: 25px;
+    }
+
+    .hero-content {
+        width: 60%;
+
+        margin-left: 3%;
+    }
+
+    .resources-paper {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        margin-left: 0;
+
+        justify-content: center;
+    }
+
+    .auth-buttons {
+        margin-left: auto;
+    }
+
+    .hero-content {
+        width: 90%;
+
+        margin: 60px auto 0;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .begin-btn {
+        width: 300px;
+
+        max-width: 90%;
+    }
+
+    .resources-paper {
+        width: 92%;
+    }
+
+    .resources-text h1 {
+        font-size: 18px;
+    }
+}

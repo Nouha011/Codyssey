@@ -1,0 +1,179 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   ITHACA PAGE
+================================ */
+
+.ithaca-page {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 40px 20px;
+
+    background-image: url("images/ithaca-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ================================
+   PARCHMENT
+================================ */
+
+.ithaca-paper {
+    display: block;
+
+    width: min(400px, 72vw);
+    height: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ================================
+   RETURN TO MAP BUTTON
+================================ */
+
+.map-button {
+    display: block;
+
+    width: min(250px, 48vw);
+
+    margin-top: -10px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: url("images/cursor-pointer.png") 8 5, pointer;
+
+    position: relative;
+    z-index: 3;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.map-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Hover */
+
+.map-button:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+
+/* Click */
+
+.map-button:active {
+    transform: scale(0.98);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    cursor: url("images/cursor.png"), auto;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .ithaca-page {
+        padding: 30px 15px;
+    }
+
+    .ithaca-paper {
+        width: min(680px, 82vw);
+    }
+
+    .map-button {
+        width: min(460px, 58vw);
+        margin-top: -30px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .ithaca-page {
+        min-height: 100svh;
+
+        padding: 25px 10px;
+    }
+
+    .ithaca-paper {
+        width: 94vw;
+    }
+
+    .map-button {
+        width: 72vw;
+        margin-top: -15px;
+    }
+}
+
+
+/* ================================
+   VERY SMALL PHONES
+================================ */
+
+@media (max-width: 400px) {
+
+    .ithaca-page {
+        padding: 15px 5px;
+    }
+
+    .ithaca-paper {
+        width: 98vw;
+    }
+
+    .map-button {
+        width: 78vw;
+        margin-top: -5px;
+    }
+}

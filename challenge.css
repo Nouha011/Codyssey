@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+    cursor: url("images/cursor.png") 5 5, auto;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.challenge-page {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    background-image: url("images/challenge-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.challenge-header {
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.logo {
+    color: #e4cda7;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 40px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.logo-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+.logo-decoration span:not(.diamond) {
+    width: 85px;
+    height: 1px;
+
+    background: #c9a87e;
+}
+
+.logo-decoration .diamond {
+    color: #c9a87e;
+    font-size: 9px;
+}
+
+
+/* =========================
+   MAIN COMPOSITION
+========================= */
+
+.challenge-content {
+    width: 1275px;
+    height: 820px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 145px;
+
+    transform: translateX(-50%) scale(0.78);
+
+    transform-origin: top center;
+}
+
+
+/* =========================
+   PAPERS + TERMINAL
+========================= */
+
+.challenge-layout {
+    position: absolute;
+
+    top: -25px;
+    left: 0;
+
+    width: 1275px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 55px;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.challenge-left {
+    width: 700px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   QUESTION PAPER
+========================= */
+
+.question-box {
+    width: 700px;
+    height: 350px;
+
+    position: relative;
+}
+
+.question-paper {
+    display: block;
+
+    width: 700px;
+    height: 350px;
+}
+
+
+/* QUESTION TEXT */
+
+.question-content {
+    position: absolute;
+
+    top: 55px;
+    left: 65px;
+    right: 65px;
+
+    color: #29201d;
+}
+
+.question-content h1 {
+    font-family: "Cinzel", serif;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 17px;
+}
+
+.question-content p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    max-width: 570px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   TERMINAL
+========================= */
+
+.terminal {
+    width: 700px;
+    height: 260px;
+
+    margin-top: 12px;
+
+    background: #251d1d;
+
+    border: 4px solid #a17d5e;
+
+    box-shadow:
+        0 0 0 2px #30201c,
+        0 5px 10px rgba(0, 0, 0, 0.35);
+
+    color: #d8c6a8;
+}
+
+
+/* TERMINAL HEADER */
+
+.terminal-header {
+    width: 100%;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    border-bottom: 1px solid rgba(228, 205, 167, 0.3);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+}
+
+.terminal-header span {
+    margin-right: 10px;
+
+    font-family: monospace;
+
+    font-size: 19px;
+}
+
+
+/* TERMINAL BODY */
+
+.terminal-body {
+    height: calc(260px - 47px);
+
+    padding: 18px 25px;
+
+    font-family: monospace;
+
+    font-size: 16px;
+}
+
+.terminal-placeholder {
+    color: #81736b;
+
+    margin-bottom: 12px;
+}
+
+.terminal-line {
+    color: #d8c6a8;
+}
+
+
+/* TERMINAL CURSOR */
+
+.terminal-cursor {
+    display: inline-block;
+
+    width: 2px;
+    height: 17px;
+
+    background: #d8c6a8;
+
+    vertical-align: middle;
+
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   RIGHT ALIGNMENT PAPER
+========================= */
+
+.challenge-right {
+    width: 520px;
+    flex-shrink: 0;
+}
+
+.alignment-box {
+    width: 520px;
+    height: 720px;
+
+    position: relative;
+}
+
+.alignment-paper {
+    display: block;
+
+    width: 520px;
+    height: 720px;
+}
+
+
+/* ALIGNMENT CONTENT */
+
+.alignment-content {
+    position: absolute;
+
+    top: 55px;
+    left: 55px;
+    right: 55px;
+}
+
+.alignment-content h2 {
+    font-family: "Cinzel", serif;
+
+    text-align: center;
+
+    color: #29201d;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 27px;
+}
+
+
+/* PIECES */
+
+.pieces {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.piece {
+    width: 100%;
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    background: rgba(239, 216, 178, 0.55);
+
+    border: 2px solid #594333;
+
+    border-radius: 8px;
+
+    color: #29201d;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.challenge-buttons {
+    position: absolute;
+
+    /*
+        Buttons are underneath
+        the terminal.
+
+        Moved slightly UP from 635px
+        to 605px.
+    */
+
+    top: 605px;
+    left: 0;
+
+    width: 700px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* CHECK ANSWER */
+
+.check-answer {
+    display: block;
+
+    width: 350px;
+    height: 73px;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+.check-answer img {
+    display: block;
+
+    width: 350px;
+    height: 73px;
+
+    object-fit: contain;
+}
+
+.check-answer:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.08);
+}
+
+
+/* LEAVE CHALLENGE */
+
+.leave-challenge {
+    display: block;
+
+    width: 270px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+.leave-challenge img {
+    display: block;
+
+    width: 270px;
+    height: 65px;
+
+    object-fit: contain;
+}
+
+.leave-challenge:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.08);
+}
+
+
+/* =========================
+   CURSOR
+========================= */
+
+a {
+    cursor: url("images/cursor.png") 5 5, auto;
+}
+
+
+/* =========================
+   RESPONSIVE SCALING
+========================= */
+
+@media (min-width: 1500px) {
+
+    .challenge-content {
+        transform: translateX(-50%) scale(0.78);
+    }
+}
+
+
+@media (max-width: 1499px) {
+
+    .challenge-content {
+        transform: translateX(-50%) scale(0.68);
+    }
+}
+
+
+@media (max-height: 800px) {
+
+    .challenge-content {
+        top: 120px;
+
+        transform: translateX(-50%) scale(0.65);
+    }
+}
+
+
+@media (max-width: 1100px) {
+
+    .challenge-content {
+        transform: translateX(-50%) scale(0.55);
+    }
+
+    .logo {
+        font-size: 34px;
+    }
+}
