@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #FFF0F5 ;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: Parisienne;
+     font-size: 50px;
+     text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content img {
+    width: 300px;
+    height: auto;
+}
+
+.content p {
+    font-size: 18px;
+}
