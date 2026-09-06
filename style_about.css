@@ -95,7 +95,7 @@ a:hover {
 
 /* ---------- Hero ---------- */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Image/Back1.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/Back1.png');
  background-size: cover;
  background-position: center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ a:hover {
 .mission-image {
   flex: 1;
   min-height: 180px;
-  background-image: url('Image/Back_main.png');
+  background-image: url('images/Back_main.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -150,7 +150,7 @@ a:hover {
 
 /* ---------- Meet The Team ---------- */
 .team {
-  background:url('Image/Back3.png');
+  background:url('images/Back3.png');
   padding: 56px 40px 72px;
   text-align: center;
 }
