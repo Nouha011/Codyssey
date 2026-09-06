@@ -7,7 +7,7 @@
 body {
   font-family: 'DM Sans', sans-serif;
   min-height: 100vh;
-  background-image: url('Image/Back_main.png');
+  background-image: url('images/Back_main.png');
   background-size: cover;        /* was contain */
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +36,7 @@ body {
 .card {
   width: 380px;
   min-height: 520px;
-  background-image: url('Image/card.png');
+  background-image: url('images/card.png');
   background-size: 100% 100%;   /* stretches to fill the tall card shape */
   background-repeat: no-repeat;
   display: flex;
