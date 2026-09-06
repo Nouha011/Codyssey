@@ -243,6 +243,15 @@ a:hover {
   align-self: stretch;
 
 }
+.about-image2{
+      flex: 1;
+  min-height: 180px;
+  background-image: url('images/Cerine.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: stretch;
+}
 
 .Skill-photo {
   width: 110px;
